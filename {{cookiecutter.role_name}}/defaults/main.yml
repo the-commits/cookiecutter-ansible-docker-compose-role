@@ -1,0 +1,11 @@
+---
+{{ cookiecutter.role_name }}_base_dir: "/opt/{{ cookiecutter.role_name }}"
+{{ cookiecutter.role_name }}_image: "{{ cookiecutter.docker_image }}"
+{{ cookiecutter.role_name }}_container_name: "{{ cookiecutter.container_name }}"
+{{ cookiecutter.role_name }}_docker_network: "{{ cookiecutter.role_name }}"
+
+# Resource limits (Docker Compose deploy.resources)
+{{ cookiecutter.role_name }}_memory_max: "{{ cookiecutter.default_memory_mb }}m"
+{{ cookiecutter.role_name }}_memory_reservation: "{{ cookiecutter.default_memory_mb // 2 }}m"
+{{ cookiecutter.role_name }}_cpus_max: "{{ cookiecutter.default_cpus }}"
+{{ cookiecutter.role_name }}_cpus_reservation: "{{ (cookiecutter.default_cpus | float / 2) | round(1) }}"

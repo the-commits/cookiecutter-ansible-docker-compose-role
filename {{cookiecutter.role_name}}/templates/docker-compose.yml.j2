@@ -1,0 +1,23 @@
+# {{ ansible_managed }}
+# {{ cookiecutter.role_name }} - Docker Compose stack
+
+services:
+  {{ cookiecutter.container_name }}:
+    image: "{{ "{{" }} {{ cookiecutter.role_name }}_image {{ "}}" }}"
+    container_name: "{{ "{{" }} {{ cookiecutter.role_name }}_container_name {{ "}}" }}"
+    restart: unless-stopped
+    networks:
+      - "{{ "{{" }} {{ cookiecutter.role_name }}_docker_network {{ "}}" }}"
+    deploy:
+      resources:
+        limits:
+          memory: "{{ "{{" }} {{ cookiecutter.role_name }}_memory_max {{ "}}" }}"
+          cpus: "{{ "{{" }} {{ cookiecutter.role_name }}_cpus_max {{ "}}" }}"
+        reservations:
+          memory: "{{ "{{" }} {{ cookiecutter.role_name }}_memory_reservation {{ "}}" }}"
+          cpus: "{{ "{{" }} {{ cookiecutter.role_name }}_cpus_reservation {{ "}}" }}"
+
+networks:
+  {{ cookiecutter.role_name }}:
+    name: "{{ "{{" }} {{ cookiecutter.role_name }}_docker_network {{ "}}" }}"
+    driver: bridge

@@ -1,0 +1,18 @@
+namespace: {{ cookiecutter.namespace }}
+name: {{ cookiecutter.role_name }}
+version: 1.0.0
+readme: README.md
+authors:
+  - {{ cookiecutter.author }}
+description: {{ cookiecutter.description }}
+license:
+  - {{ cookiecutter.license }}
+tags:
+  - docker
+  - docker_compose
+  - {{ cookiecutter.role_name }}
+dependencies:
+  docker: {}
+  docker_compose: {}
+repository: https://{{ cookiecutter.git_host }}/~{{ cookiecutter.git_user }}/{{ cookiecutter.role_name }}
+issues: https://{{ cookiecutter.git_host }}/~{{ cookiecutter.git_user }}/{{ cookiecutter.role_name }}

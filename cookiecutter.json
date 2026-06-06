@@ -1,0 +1,22 @@
+{
+    "role_name": "my_docker_compose_stack",
+    "role_short_description": "Deploy My Docker Compose Stack",
+    "namespace": "tjenamors",
+    "author": "the-commits",
+    "description": "An Ansible role to deploy ... via Docker Compose",
+    "docker_image": "example/app:latest",
+    "container_name": "{{ cookiecutter.role_name }}",
+    "default_memory_mb": "512",
+    "default_cpus": "1",
+    "min_ansible_version": "2.14",
+    "git_host": "git.sr.ht",
+    "git_user": "{{ cookiecutter.author }}",
+    "license": ["AGPL-3.0", "MIT", "BSD-3-Clause", "GPL-3.0-only", "Proprietary"],
+    "create_molecule": ["yes", "no"],
+    "_copy_without_render": [
+        "*.yml",
+        "*.yaml",
+        "*.j2"
+    ],
+    "_extensions": ["jinja2_time.TimeExtension"]
+}
