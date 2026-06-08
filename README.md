@@ -29,11 +29,18 @@ You'll be prompted for:
 | `git_user` | *(author)* | User/org on git host |
 | `license` | `AGPL-3.0` | License type |
 | `create_molecule` | `yes` | Scaffold molecule tests |
+| `mirror_to_github` | `yes` | Auto-create public GitHub mirror |
+
+When `mirror_to_github` is `yes`, the template generates a `.builds/push.yml`
+for automated GitHub mirroring and runs `gh repo create --public` to set up
+the mirror repo.
 
 ## Output
 
 ```
 my_docker_compose_stack/
+├── .builds/          # GitHub mirror build manifest (if mirror_to_github)
+├── .github/          # Issue/PR redirects to sourcehut
 ├── defaults/        # Resource limits + deploy dir
 ├── handlers/        # Docker Compose restart handler
 ├── meta/            # Galaxy metadata + docker deps
@@ -43,6 +50,7 @@ my_docker_compose_stack/
 ├── molecule/default/
 ├── galaxy.yml
 ├── AGENTS.md
+├── CONTRIBUTING.md   # Points contributors to sourcehut
 ├── CHANGELOG.md
 ├── LICENSE
 └── README.md
