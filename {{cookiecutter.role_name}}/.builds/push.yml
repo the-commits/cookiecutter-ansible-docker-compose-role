@@ -1,0 +1,23 @@
+---
+image: alpine/edge
+packages:
+  - git
+sources:
+  - https://{{ cookiecutter.git_host }}/~{{ cookiecutter.git_user }}/{{ cookiecutter.role_name }}
+secrets:
+  - e3464eed-b716-485b-873c-a785ef7bf68b
+environment:
+  repo_name: {{ cookiecutter.role_name }}
+  github_username: {{ cookiecutter.git_user }}
+  github_repo: {{ cookiecutter.git_user }}/{{ cookiecutter.role_name }}
+tasks:
+  - push: |
+      set +x
+      cd "${repo_name}"
+      github_token=$(cat ~/secrets/github_pat)
+      github_url=$(printf \
+        "https://%s:%s@github.com/%s" \
+        "${github_username}" \
+        "${github_token}" \
+        "${github_repo}")
+      git push --all "${github_url}" -f

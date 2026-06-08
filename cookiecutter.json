@@ -13,9 +13,8 @@
     "git_user": "{{ cookiecutter.author }}",
     "license": ["AGPL-3.0", "MIT", "BSD-3-Clause", "GPL-3.0-only", "Proprietary"],
     "create_molecule": ["yes", "no"],
+    "mirror_to_github": ["yes", "no"],
     "_copy_without_render": [
-        "*.yml",
-        "*.yaml",
         "*.j2"
     ],
     "_extensions": ["jinja2_time.TimeExtension"]

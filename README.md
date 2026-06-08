@@ -68,6 +68,12 @@ vars:
   my_role_cpus_max: "2"
 ```
 
+## Related Templates
+
+- **`cookiecutter-ansible-role`** — for standalone roles (system config, SSH, packages).
+  Use this when your role does NOT deploy Docker Compose stacks.
+- **`cookiecutter-ansible-docker-compose-role`** (this repo) — for Docker Compose stack roles.
+
 ## Requirements
 
 - Python 3.8+
