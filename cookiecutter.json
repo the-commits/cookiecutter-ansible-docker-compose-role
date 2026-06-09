@@ -14,7 +14,7 @@
     "license": ["AGPL-3.0", "MIT", "BSD-3-Clause", "GPL-3.0-only", "Proprietary"],
     "create_molecule": ["yes", "no"],
     "mirror_to_github": ["yes", "no"],
-    "secret_uuid": "00000000-0000-0000-0000-000000000000",
+    "secret_uuid": "e3464eed-b716-485b-873c-a785ef7bf68b",
     "_copy_without_render": [
         "*.j2"
     ],
