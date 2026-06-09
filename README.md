@@ -30,6 +30,7 @@ You'll be prompted for:
 | `license` | `AGPL-3.0` | License type |
 | `create_molecule` | `yes` | Scaffold molecule tests |
 | `mirror_to_github` | `yes` | Auto-create public GitHub mirror |
+| `secret_uuid` | `00000000-...` | Sourcehut secret UUID for GitHub mirror auth |
 
 When `mirror_to_github` is `yes`, the template generates a `.builds/push.yml`
 for automated GitHub mirroring and runs `gh repo create --public` to set up
