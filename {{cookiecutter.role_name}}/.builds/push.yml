@@ -5,7 +5,7 @@ packages:
 sources:
   - https://{{ cookiecutter.git_host }}/~{{ cookiecutter.git_user }}/{{ cookiecutter.role_name }}
 secrets:
-  - e3464eed-b716-485b-873c-a785ef7bf68b
+  - {{ cookiecutter.secret_uuid }}
 environment:
   repo_name: {{ cookiecutter.role_name }}
   github_username: {{ cookiecutter.git_user }}
