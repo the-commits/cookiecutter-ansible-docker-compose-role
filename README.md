@@ -1,3 +1,6 @@
+[![sourcehut](https://img.shields.io/badge/sourcehut-~the--commits/cookiecutter--ansible--docker--compose--role-2d6b9e?logo=sourcehut)](https://git.sr.ht/~the-commits/cookiecutter-ansible-docker-compose-role)
+[![GitHub mirror](https://img.shields.io/badge/GitHub-the--commits/cookiecutter--ansible--docker--compose--role-181717?logo=github)](https://github.com/the-commits/cookiecutter-ansible-docker-compose-role)
+
 # cookiecutter-ansible-docker-compose-role
 
 A [cookiecutter](https://github.com/cookiecutter/cookiecutter) template for

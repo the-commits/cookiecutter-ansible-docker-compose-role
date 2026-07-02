@@ -1,4 +1,9 @@
-This repository is a **read-only mirror** — do not open PRs here.
+Thank you for your interest in contributing!
 
-Please send patches to the sourcehut mailing list instead:
-`~the-commits/cookiecutter-ansible-docker-compose-role@lists.sr.ht`
+This repository on GitHub is a **read-only mirror** of the canonical
+repository on sourcehut: https://git.sr.ht/~the-commits/cookiecutter-ansible-docker-compose-role
+
+Please send patches to the mailing list instead:
+  ~the-commits/cookiecutter-ansible-docker-compose-role@lists.sr.ht
+
+See https://git-send-email.io/ for help with `git send-email`.
