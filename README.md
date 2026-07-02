@@ -1,6 +1,12 @@
 [![sourcehut](https://img.shields.io/badge/sourcehut-~the--commits/cookiecutter--ansible--docker--compose--role-2d6b9e?logo=sourcehut)](https://git.sr.ht/~the-commits/cookiecutter-ansible-docker-compose-role)
 [![GitHub mirror](https://img.shields.io/badge/GitHub-the--commits/cookiecutter--ansible--docker--compose--role-181717?logo=github)](https://github.com/the-commits/cookiecutter-ansible-docker-compose-role)
 
+> **Do not open issues or pull requests on GitHub** — the mirror there is
+> [read-only](https://git.sr.ht/~the-commits/cookiecutter-ansible-docker-compose-role).
+> Please use the [sourcehut issue tracker](https://todo.sr.ht/~the-commits/cookiecutter-ansible-docker-compose-role)
+> and send patches to [~the-commits/cookiecutter-ansible-docker-compose-role@lists.sr.ht](mailto:~the-commits/cookiecutter-ansible-docker-compose-role@lists.sr.ht).
+
+
 # cookiecutter-ansible-docker-compose-role
 
 A [cookiecutter](https://github.com/cookiecutter/cookiecutter) template for
